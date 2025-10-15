@@ -23,7 +23,7 @@ nav {
         color: #007bff;
     }
     .nav-link.active {
-        background-color: #007bff;
+        border-bottom: #333 2px solid;
         color: #fff;
     }
 
