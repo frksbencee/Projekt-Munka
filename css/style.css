@@ -11,28 +11,22 @@ nav {
     border-radius: 5px;
     transition: 0.3s ease;
 }
-    .nav-link {
-        margin-right: 15px;
-        color: #333;
-        text-decoration: none;
-        padding: 8px 12px;
-        border-radius: 4px;
-    }
-    .nav-link:hover {
-        background-color: #e2e6ea;
-        color: #007bff;
-    }
-    .nav-link.active {
-        border-bottom: #333 2px solid;
-        color: #fff;
-    }
 
-h1{
-    text-align: center;
+.nav-link {
+    margin-right: 15px;
+    color: #333;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
 }
-.svg{
-    width: 5%;
+
+.nav-link:hover {
+    background-color: #e2e6ea;
+    color: #007bff;
 }
-h2{
-    text-align: center;
+
+.nav-link.active {
+    border-bottom: #333 2px solid;
+    color: #fff;
 }
+
