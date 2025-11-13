@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,37 +15,292 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
-  <title>Kezdőlap</title>
+  <title>Itallap - Sing Sing Music Hall</title>
+  <style>
+    .drink-card {
+      height: 100%;
+      transition: all 0.3s ease;
+      border: none;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: white;
+    }
+
+    .drink-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(255, 215, 0, 0.3);
+      border-top: 3px solid #ffd700;
+    }
+
+    .drink-category {
+      background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+      color: #1a1a2e;
+      padding: 20px;
+      border-radius: 15px;
+      margin: 30px 0 20px 0;
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+    }
+
+    .drink-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+
+    .drink-price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #ffd700;
+      margin-top: 15px;
+    }
+
+    main {
+      background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
+      min-height: 100vh;
+      padding: 30px 0;
+    }
+
+    .container {
+      max-width: 1200px;
+    }
+  </style>
 </head>
 
 <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
 
-            <a class="nav-link active" aria-current="page" href="index.html">Kezdőlap</a>
-            <a class="nav-link" href="esemenyek.html">Események</a>
-            <a class="nav-link" href="jegyarak.html">Jegyárak</a>
-            <a class="nav-link" href="itallap.html">Itallap</a>
-            <a class="nav-link" href="galeria.html">Galéria</a>
-            <a class="nav-link" href="kapcsolat.html">Kapcsolat</a>
+          <a class="nav-link" href="index.html">Kezdőlap</a>
+          <a class="nav-link" href="esemenyek.html">Események</a>
+          <a class="nav-link" href="jegyarak.html">Jegyárak</a>
+          <a class="nav-link active" aria-current="page" href="itallap.html">Itallap</a>
+          <a class="nav-link" href="galeria.html">Galéria</a>
+          <a class="nav-link" href="kapcsolat.html">Kapcsolat</a>
+        </div>
+      </div>
+    </div>
+    <img src="img/logo.svg" alt="" class="svg me-5">
+    <h1>Sing Sing Music Hall</h1>
+    <h2>Tánc- és éjszakai klub</h2>
+  </nav>
+
+</header>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="text-center mb-5 mt-5">
+        <h1 style="color: #ffd700; font-size: 2.5rem; font-weight: bold;">🍹 ITALLAP 🍹</h1>
+        <p style="color: #d1d1d6; font-size: 1.1rem;">Fedezd fel lenyűgöző ital kínálatunkat</p>
+      </div>
+
+      <!-- RÖVID ITALOK -->
+      <div class="drink-category">🥃 RÖVID ITALOK</div>
+      <div class="row g-4 mb-5">
+        <div class="col-md-6 col-lg-4">
+          <div class="card drink-card">
+            <div class="card-body">
+              <h5 class="drink-title">Vodka Cola</h5>
+
+              <div class="drink-price">1 200 Ft</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card drink-card">
+            <div class="card-body">
+              <h5 class="drink-title">Rum Shot</h5>
+
+              <div class="drink-price">1 000 Ft</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card drink-card">
+            <div class="card-body">
+              <h5 class="drink-title">Tequila Sunrise Shot</h5>
+
+              <div class="drink-price">1 100 Ft</div>
+            </div>
           </div>
         </div>
       </div>
-      <img src="img/logo.svg" alt="" class="svg me-5">
-      <h1>Sing Sing Music Hall</h1>
-      <h2>Tánc- és éjszakai klub</h2>
-    </nav>
 
-  </header>
+      <!-- KOKTÉLOK -->
+      <div class="drink-category">🍸 KOKTÉLOK</div>
+      <div class="row g-4 mb-5">
+        <div class="col-md-6 col-lg-4">
+          <div class="card drink-card">
+            <div class="card-body">
+              <h5 class="drink-title">Mojito</h5>
 
-<body>
+              <div class="drink-price">1 800 Ft</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card drink-card">
+            <div class="card-body">
+              <h5 class="drink-title">Margarita</h5>
 
+              <div class="drink-price">1 900 Ft</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card drink-card">
+            <div class="card-body">
+              <h5 class="drink-title">Piña Colada</h5>
+
+              <div class="drink-price">2 000 Ft</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card drink-card">
+            <div class="card-body">
+              <h5 class="drink-title">Cosmopolitan</h5>
+
+              <div class="drink-price">2 100 Ft</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card drink-card">
+            <div class="card-body">
+              <h5 class="drink-title">Daiquiri</h5>
+
+              <div class="drink-price">1 700 Ft</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card drink-card">
+            <div class="card-body">
+              <h5 class="drink-title">Manhattan</h5>
+
+              <div class="drink-price">2 200 Ft</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ÜDÍTŐITAL -->
+      <div class="drink-category">🥤 ÜDÍTŐITALOK</div>
+      <div class="row g-4 mb-5">
+        <div class="col-md-6 col-lg-4">
+          <div class="card drink-card">
+            <div class="card-body">
+              <h5 class="drink-title">Friss Citromos Limonádé</h5>
+
+              <div class="drink-price">600 Ft</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card drink-card">
+            <div class="card-body">
+              <h5 class="drink-title">Epres Smoothie</h5>
+
+              <div class="drink-price">750 Ft</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ENERGIAITALOK -->
+      <div class="drink-category">⚡ ENERGIAITALOK</div>
+      <div class="row g-4 mb-5">
+        <div class="col-md-6 col-lg-4">
+          <div class="card drink-card">
+            <div class="card-body">
+              <h5 class="drink-title">Red Bull</h5>
+
+              <div class="drink-price">900 Ft</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card drink-card">
+            <div class="card-body">
+              <h5 class="drink-title">Vodka-Energy</h5>
+
+              <div class="drink-price">1 500 Ft</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card drink-card">
+            <div class="card-body">
+              <h5 class="drink-title">Ginger Shot</h5>
+
+              <div class="drink-price">650 Ft</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HOSSZÚ ITALOK -->
+      <div class="drink-category">🍹 HOSSZÚ ITALOK</div>
+      <div class="row g-4 mb-5">
+        <div class="col-md-6 col-lg-4">
+          <div class="card drink-card">
+            <div class="card-body">
+              <h5 class="drink-title">Gin and Tonic</h5>
+
+              <div class="drink-price">1 600 Ft</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card drink-card">
+            <div class="card-body">
+              <h5 class="drink-title">Cuba Libre</h5>
+
+              <div class="drink-price">1 400 Ft</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card drink-card">
+            <div class="card-body">
+              <h5 class="drink-title">Mixx Long</h5>
+
+              <div class="drink-price">1 700 Ft</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card drink-card">
+            <div class="card-body">
+              <h5 class="drink-title">Terrace Breeze</h5>
+
+              <div class="drink-price">1 800 Ft</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card drink-card">
+            <div class="card-body">
+              <h5 class="drink-title">Whiskey Sour Long</h5>
+
+              <div class="drink-price">2 000 Ft</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
 
 
 
@@ -58,15 +314,12 @@
 
 
   <footer>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2758.6772341283727!2d20.13562417695476!3d46.256643971097915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474487dff1666e67%3A0x27d203cf71aa9837!2sSing%20Sing%20Music%20Hall!5e0!3m2!1shu!2shu!4v1760607124177!5m2!1shu!2shu"
-      width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade" class=""></iframe>
     <div class="footer">
       <div class="row">
         <a href="https://www.facebook.com/SingSingSzeged/" target="_blank"><i class="fa fa-facebook"></i></a>
         <a href="https://www.instagram.com/singsingszeged/" target="_blank"><i class="fa fa-instagram"></i></a>
-        <a href="https://www.youtube.com/watch?v=jB7gGRZlzO4&list=RDjB7gGRZlzO4&start_radio=1" target="_blank"><i class="fa fa-youtube"></i></a>
+        <a href="https://www.youtube.com/watch?v=jB7gGRZlzO4&list=RDjB7gGRZlzO4&start_radio=1" target="_blank"><i
+            class="fa fa-youtube"></i></a>
         <a href="#"><i class="fa fa-twitter" target="_blank">kesobb</i></a>
       </div>
 
@@ -86,8 +339,9 @@
     </div>
   </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
