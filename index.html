@@ -7,135 +7,158 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
   <title>Kezdőlap</title>
 </head>
 
-<header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
- 
-        <a class="nav-link active" aria-current="page" href="index.html">Kezdőlap</a>
-        <a class="nav-link" href="esemenyek.html">Események</a>
-        <a class="nav-link" href="jegyarak.html">Jegyárak</a>
-        <a class="nav-link" href="itallap.html">Itallap</a>
-        <a class="nav-link" href="galeria.html">Galéria</a>
-        <a class="nav-link" href="kapcsolat.html">Kapcsolat</a>
-      </div>
-    </div>
-  </div>
-  <img src="img/logo.svg" alt="" class="svg me-5">
-</nav>
-</header>
-<h1>Sing Sing Music Hall</h1>
-<h2>Tánc- és éjszakai klub</h2>
 <body>
-
-  <div class="main-music-card">
-    <input type="checkbox" id="play-toggle" hidden="" />
-
-    <div class="track-info">
-      <div class="album-art"></div>
-      <div class="track-details">
-        <div class="track-title">Techbeat</div>
-        <div class="artist-name">My - World #1</div>
-      </div>
-      <div class="volume-bars">
-        <div class="bar" style="--delay:0s"></div>
-        <div class="bar" style="--delay:0.1s"></div>
-        <div class="bar" style="--delay:0.2s"></div>
-        <div class="bar" style="--delay:0.3s"></div>
-        <div class="bar" style="--delay:0.4s"></div>
-        <div class="bar" style="--delay:0.5s"></div>
-        <div class="bar" style="--delay:0.6s"></div>
-        <div class="bar" style="--delay:0.7s"></div>
-      </div>
-    </div>
-
-    <div class="playback-controls">
-      <div class="time-info">
-        <span class="current-time"></span>
-        <span class="remaining-time"></span>
-      </div>
-      <div class="progress-bar">
-        <div class="progress-fill"></div>
-        <div class="progress-handle"></div>
-      </div>
-      <div class="button-row">
-        <div class="main-control-btns">
-          <button class="control-button back">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-              class="bi bi-skip-backward-fill" viewBox="0 0 16 16">
-              <path
-                d="M.5 3.5A.5.5 0 0 0 0 4v8a.5.5 0 0 0 1 0V8.753l6.267 3.636c.54.313 1.233-.066 1.233-.697v-2.94l6.267 3.636c.54.314 1.233-.065 1.233-.696V4.308c0-.63-.693-1.01-1.233-.696L8.5 7.248v-2.94c0-.63-.692-1.01-1.233-.696L1 7.248V4a.5.5 0 0 0-.5-.5">
-              </path>
-            </svg>
-          </button>
-          <div class="play-pause-btns">
-            <label for="play-toggle" class="control-button play-pause-button">
-              <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                viewBox="0 0 16 16">
-                <path
-                  d="M11.596 8.697l-6.363 3.692c-.54.314-1.233-.065-1.233-.696V4.308c0-.63.693-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393">
-                </path>
-              </svg>
-              <svg class="icon-pause" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                viewBox="0 0 16 16">
-                <path
-                  d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5">
-                </path>
-              </svg>
-            </label>
-          </div>
-          <button class="control-button next">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-              class="bi bi-skip-forward-fill" viewBox="0 0 16 16">
-              <path
-                d="M15.5 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V8.753l-6.267 3.636c-.54.313-1.233-.066-1.233-.697v-2.94l-6.267 3.636C.693 12.703 0 12.324 0 11.693V4.308c0-.63.693-1.01 1.233-.696L7.5 7.248v-2.94c0-.63.693-1.01 1.233-.696L15 7.248V4a.5.5 0 0 1 .5-.5">
-              </path>
-            </svg>
-          </button>
-        </div>
-        <button class="control-button d">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-radar"
-            viewBox="0 0 16 16">
-            <path
-              d="M6.634 1.135A7 7 0 0 1 15 8a.5.5 0 0 1-1 0 6 6 0 1 0-6.5 5.98v-1.005A5 5 0 1 1 13 8a.5.5 0 0 1-1 0 4 4 0 1 0-4.5 3.969v-1.011A2.999 2.999 0 1 1 11 8a.5.5 0 0 1-1 0 2 2 0 1 0-2.5 1.936v-1.07a1 1 0 1 1 1 0V15.5a.5.5 0 0 1-1 0v-.518a7 7 0 0 1-.866-13.847">
-            </path>
-          </svg>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+
+            <a class="nav-link active" aria-current="page" href="index.html">Kezdőlap</a>
+            <a class="nav-link" href="esemenyek.html">Események</a>
+            <a class="nav-link" href="jegyarak.html">Jegyárak</a>
+            <a class="nav-link" href="itallap.html">Itallap</a>
+            <a class="nav-link" href="galeria.html">Galéria</a>
+            <a class="nav-link" href="kapcsolat.html">Kapcsolat</a>
+          </div>
+        </div>
+      </div>
+      <img src="img/logo.svg" alt="" class="svg me-5">
+      <h1>Sing Sing Music Hall</h1>
+      <h2>Tánc- és éjszakai klub</h2>
+    </nav>
+
+  </header>
+  <main class="d-flex flex-column vh-100 container-fluid">
+
+
+      <div class="main-music-card">
+        <input type="checkbox" id="play-toggle" hidden="" />
+
+        <div class="track-info">
+          <div class="album-art"></div>
+          <div class="track-details">
+            <div class="track-title">Techbeat</div>
+            <div class="artist-name">My - World #1</div>
+          </div>
+          <div class="volume-bars">
+            <div class="bar" style="--delay:0s"></div>
+            <div class="bar" style="--delay:0.1s"></div>
+            <div class="bar" style="--delay:0.2s"></div>
+            <div class="bar" style="--delay:0.3s"></div>
+            <div class="bar" style="--delay:0.4s"></div>
+            <div class="bar" style="--delay:0.5s"></div>
+            <div class="bar" style="--delay:0.6s"></div>
+            <div class="bar" style="--delay:0.7s"></div>
+          </div>
+        </div>
+
+        <div class="playback-controls">
+          <div class="time-info">
+            <span class="current-time"></span>
+            <span class="remaining-time"></span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+            <div class="progress-handle"></div>
+          </div>
+          <div class="button-row">
+            <div class="main-control-btns">
+              <button class="control-button back">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                  class="bi bi-skip-backward-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M.5 3.5A.5.5 0 0 0 0 4v8a.5.5 0 0 0 1 0V8.753l6.267 3.636c.54.313 1.233-.066 1.233-.697v-2.94l6.267 3.636c.54.314 1.233-.065 1.233-.696V4.308c0-.63-.693-1.01-1.233-.696L8.5 7.248v-2.94c0-.63-.692-1.01-1.233-.696L1 7.248V4a.5.5 0 0 0-.5-.5">
+                  </path>
+                </svg>
+              </button>
+              <div class="play-pause-btns">
+                <label for="play-toggle" class="control-button play-pause-button">
+                  <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M11.596 8.697l-6.363 3.692c-.54.314-1.233-.065-1.233-.696V4.308c0-.63.693-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393">
+                    </path>
+                  </svg>
+                  <svg class="icon-pause" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5">
+                    </path>
+                  </svg>
+                </label>
+              </div>
+              <button class="control-button next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                  class="bi bi-skip-forward-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M15.5 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V8.753l-6.267 3.636c-.54.313-1.233-.066-1.233-.697v-2.94l-6.267 3.636C.693 12.703 0 12.324 0 11.693V4.308c0-.63.693-1.01 1.233-.696L7.5 7.248v-2.94c0-.63.693-1.01 1.233-.696L15 7.248V4a.5.5 0 0 1 .5-.5">
+                  </path>
+                </svg>
+              </button>
+            </div>
+            <button class="control-button d">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-radar"
+                viewBox="0 0 16 16">
+                <path
+                  d="M6.634 1.135A7 7 0 0 1 15 8a.5.5 0 0 1-1 0 6 6 0 1 0-6.5 5.98v-1.005A5 5 0 1 1 13 8a.5.5 0 0 1-1 0 4 4 0 1 0-4.5 3.969v-1.011A2.999 2.999 0 1 1 11 8a.5.5 0 0 1-1 0 2 2 0 1 0-2.5 1.936v-1.07a1 1 0 1 1 1 0V15.5a.5.5 0 0 1-1 0v-.518a7 7 0 0 1-.866-13.847">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2758.6772341283727!2d20.13562417695476!3d46.256643971097915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474487dff1666e67%3A0x27d203cf71aa9837!2sSing%20Sing%20Music%20Hall!5e0!3m2!1shu!2shu!4v1760607124177!5m2!1shu!2shu"
+      width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade" class=""></iframe>
+    <div class="footer">
+      <div class="row">
+        <a href="https://www.facebook.com/SingSingSzeged/"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/singsingszeged/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/watch?v=jB7gGRZlzO4&list=RDjB7gGRZlzO4&start_radio=1"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter">kesobb</i></a>
+      </div>
+
+      <div class="row">
+        <ul>
+          <li><a href="kapcsolat.html">Kapcsolat</a></li>
+          <li><a href="jegyarak.html">Jegyárak</a></li>
+          <li><a href="itallap.html">Itallap</a></li>
+          <li><a href="galeria.html">Galéria</a></li>
+          <li><a href="esemenyek.html">Események</a></li>
+        </ul>
+      </div>
+
+      <div class="row copyright">
+        <p>Sing Sing Music Hall &copy; 2025. Minden Jog Fenntartva.</p>
       </div>
     </div>
-  </div>
+  </footer>
 
 
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
 
-
-
-
-
-
-
-
-<footer>
-
-</footer>
-<div>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2758.6772341283727!2d20.13562417695476!3d46.256643971097915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474487dff1666e67%3A0x27d203cf71aa9837!2sSing%20Sing%20Music%20Hall!5e0!3m2!1shu!2shu!4v1760607124177!5m2!1shu!2shu" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="fixed-bottom"></iframe>
-</div>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
