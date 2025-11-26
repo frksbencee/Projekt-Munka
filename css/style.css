@@ -28,13 +28,14 @@ nav {
 
 .nav-link:hover {
     background-color: #e2e6ea;
-    color: #007bff;
-}
+    
+   border-bottom: 2px solid black;
+  }
 
-.nav-link.active {
-    border-bottom: #333 2px solid;
-    color: #fff;
-}
+.nav-link:active {
+    border-bottom: 2px solid black; 
+
+  }
 
 .svg{
     width: 5%;
