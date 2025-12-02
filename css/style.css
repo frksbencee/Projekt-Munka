@@ -1,8 +1,10 @@
 main{
-   background-image: url(../img/hatterkep.png);
+   background-image: url(../img/sshatterkep.jpg);
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
+  background-position: center;
+  background-color: grey;
 }
 nav {
     background-color: #f8f9fa;
@@ -210,4 +212,81 @@ text-align:left;
 .footer .row a i{
 margin:0% 3%;
 }
+}
+    .event-card {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      border-radius: 15px;
+      padding: 25px;
+      transition: .3s ease;
+      border: none;
+    }
+
+    .event-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(255, 215, 0, 0.3);
+      border-top: 3px solid #ffd700;
+    }
+
+    .event-date {
+      font-size: 1.5rem;
+      color: #ffd700;
+      font-weight: bold;
+    }
+
+    .event-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #ffd700;
+    }
+
+    .countdown-box {
+      background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+      color: #1a1a2e;
+      padding: 20px;
+      border-radius: 15px;
+      margin: 30px auto;
+      font-weight: bold;
+      font-size: 1.4rem;
+      text-align: center;
+      max-width: 800px;
+      box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+    }
+    .fellepok{
+      color: white;
+      font-family: "Science Gothic", sans-serif;
+      font-weight: bold;
+      text-align: center;
+      font-size: 110%;
+    
+    }
+    .esemenyhatter{
+      background-color: #212121;
+    }
+.elpaso{
+  background-image: url(../img/polevayacard.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.szilveszter{
+background-image: url(../img/szilvesztercard.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.xmas{
+background-image: url(../img/xmascard.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.mamacita{
+background-image: url(../img/vzscard.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
 }
