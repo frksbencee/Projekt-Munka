@@ -12,7 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Rubik:ital,wght@0,300..900;1,300..900&family=Fredoka+One&family=Play&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
   <script src="js/app.js"></script>
 
   <title>Események - Sing Sing Music Hall</title>
@@ -35,48 +35,68 @@
     <div id="countdownBox" class="countdown-box">
       Visszaszámláló a következő buliig: <span id="countdown"></span>
     </div>
-<div class="container">
-    <div class="row g-4 ">
+    <div class="container">
+      <div class="row g-4 ">
 
-      <!-- ESEMÉNY 1 -->
-      <div class="col-md-6 col-lg-6">
-        <div class="event-card mamacita">
-          <div class="event-date text-center">2025. 12. 05. – 22:00</div>
-          <h2 class="event-title">Mamacita XXL</h2>
-          <p class="fellepok"><strong>Fellépők:</strong> Nikita, VZS, Lmen Prala, Black Cell</p>
+        <!-- ESEMÉNY 1 -->
+        <div class="col-md-6 col-lg-6">
+          <div class="event-card mamacita">
+            <div class="event-date text-center">2025. 12. 05. – 22:00</div>
+            <h2 class="event-title">Mamacita XXL</h2>
+            <p class="fellepok"><strong>Fellépők:</strong> Nikita, VZS, Lmen Prala, Black Cell</p>
+          </div>
         </div>
+
+        <!-- ESEMÉNY 2 -->
+        <div class="col-md-6 col-lg-6 ">
+          <div class="event-card elpaso">
+            <div class="event-date text-center">2025. 12. 19. – 22:00</div>
+            <h2 class="event-title">El Paso</h2>
+            <p class="fellepok"><strong>Fellépők:</strong> Polevaya, Purebeat, Chriss Jay, Butchers</p>
+          </div>
+        </div>
+
+        <!-- ESEMÉNY 3 -->
+        <div class="col-md-6 col-lg-6">
+          <div class="event-card xmas">
+            <div class="event-date text-center">2025. 12. 25. – 22:00</div>
+            <h2 class="event-title">Coronita XMAS</h2>
+            <p class="fellepok"><strong>Fellépők:</strong> Andrewboy, Goldsound, Manic N, Steve Judge</p>
+          </div>
+        </div>
+
+        <!-- ESEMÉNY 4 -->
+        <div class="col-md-6 col-lg-6">
+          <div class="event-card szilveszter">
+            <div class="event-date text-center">2025. 12. 31. – 22:00</div>
+            <h2 class="event-title">Sing Sing Szilveszter</h2>
+            <p class="fellepok"><strong>Fellépők:</strong> Lennard, Molnár Bé, Cooky, Gabriel B, Sterbinszky</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6 offset-3">
+          <div class="event-card szilveszter  ">
+            <div class="event-date text-center">2026. 01. 01. 6:00 – 12:00</div>
+            <h2 class="event-title">Sing Sing Szilveszter After</h2>
+            <p class="fellepok"><strong>Fellépők:</strong>CHRSTPHR, Andrewboy, Daniel Weirdo, R92, Gabriel Dancer</p>
+          </div>
+        </div>
+
       </div>
 
-      <!-- ESEMÉNY 2 -->
-      <div class="col-md-6 col-lg-6 ">
-        <div class="event-card elpaso">
-          <div class="event-date text-center">2025. 12. 19. – 22:00</div>
-          <h2 class="event-title">El Paso</h2>
-          <p class="fellepok"><strong>Fellépők:</strong> Polevaya, Purebeat, Chriss Jay, Butchers</p>
-        </div>
-      </div>
-
-      <!-- ESEMÉNY 3 -->
-      <div class="col-md-6 col-lg-6">
-        <div class="event-card xmas">
-          <div class="event-date text-center">2025. 12. 25. – 22:00</div>
-          <h2 class="event-title">Coronita XMAS</h2>
-          <p class="fellepok"><strong>Fellépők:</strong> Andrewboy, Goldsound, Manic N, Steve Judge</p>
-        </div>
-      </div>
-
-      <!-- ESEMÉNY 4 -->
-      <div class="col-md-6 col-lg-6">
-        <div class="event-card szilveszter">
-          <div class="event-date text-center">2025. 12. 31. – 22:00</div>
-          <h2 class="event-title">Sing Sing Szilveszter</h2>
-          <p class="fellepok"><strong>Fellépők:</strong> Lennard, Molnár Bé, Cooky, Gabriel B, Sterbinszky</p>
-        </div>
-      </div>
-
+      
     </div>
-</div>
+    <div class="d-flex justify-content-center align-items-center jegyvasarlas">
+        <a class="fancy" href="jegyarak.html">
+          <span class="top-key"></span>
+          <span class="text">Jegy vásárlás</span>
+          <span class="bottom-key-1"></span>
+          <span class="bottom-key-2"></span>
+        </a>
+      </div>
   </div>
+  
+  
 
   <footer>
     <script>
@@ -92,7 +112,8 @@
       { date: "2025-12-05T22:00:00" },
       { date: "2025-12-19T22:00:00" },
       { date: "2025-12-25T22:00:00" },
-      { date: "2025-12-31T22:00:00" }
+      { date: "2025-12-31T22:00:00" },
+      { date: "2026-01-01T6:00:00" }
     ];
 
     function getNextEvent() {
@@ -134,4 +155,5 @@
   </script>
 
 </body>
+
 </html>

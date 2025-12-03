@@ -8,52 +8,201 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Rubik:ital,wght@0,300..900;1,300..900&family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Rubik:ital,wght@0,300..900;1,300..900&family=Fredoka+One&family=Play&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="js/app.js"></script>
   <title>Jegyárak</title>
 </head>
-
 <header>
   <script>
     includeHtml("header");
   </script>
 </header>
-<!-- Laza ui kesobbre -->
-<!-- <p class="loader"><span>Legkomolyabb buli Szegeden!!</span></p> -->
+<style>
+  body {
+    background: linear-gradient(135deg, #1a1a1a, #3a3a3a);
+    font-family: "Rubik", sans-serif;
+
+    h3 {
+      color: white;
+    }
+  }
+</style>
 
 <body>
-  <div class="vh-100">
-    <div class="d-flex justify-content-center align-items-center ">
-      <a class="fancy" href="#">
-        <span class="top-key"></span>
-        <span class="text">Jegy vásárlás</span>
-        <span class="bottom-key-1"></span>
-        <span class="bottom-key-2"></span>
-      </a>
+  <div class="container mt-5 mb-5">
+    <h3 class="text-center mb-4 fw-bold" style="font-size: 35px">Jegyárak</h3>
+
+    <!-- Jegyek -->
+    <div class="row g-4">
+
+      <!-- 1. jegy -->
+      <div class="col-md-6">
+        <div class="card ticket-card">
+          <img src="img/vzscard.jpg" class="ticket-img h-50" />
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div>
+              <h5 class="fw-bold">Elővételes Jegy – <span style="color: orange;">Mamacita XXL</span> - Időkorlátos <span style="color: red;">|12/05|</span></h5>
+              
+              <p class="text-muted small">A belépő éjfélig jogosít belépésre</p>
+              <span class="fw-bold fs-5">3000 Ft</span>
+            </div>
+            <button class="btn btn-dark ticket-btn add-to-cart" data-ticket="Elővételes – Időkorlátos">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. jegy -->
+      <div class="col-md-6 ">
+        <div class="card ticket-card">
+          <img src="img/vzscard.jpg" class="ticket-img h-50" />
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div>
+              <h5 class="fw-bold">Normál Elővételes Jegy – <span style="color: orange;">Mamacita XXL</span> - Időkorlát nélkül <span style="color: red;">|12/05|</span></h5>
+              <p class="text-muted small">A belépő 22:00-4:00-ig jogosít belépésre</p>
+              <span class="fw-bold fs-5">3500 Ft</span>
+            </div>
+            <button class="btn btn-dark ticket-btn add-to-cart" data-ticket="Normál Elővételes">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card ticket-card">
+          <img src="img/polevayacard.jpg" class="ticket-img h-50" />
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div>
+              <h5 class="fw-bold">Elővételes Jegy – <span style="color: purple;">El Paso</span> - Időkorlátos <span style="color: red;">|12/19|</span></h5>
+              <p class="text-muted small">A belépő éjfélig jogosít belépésre</p>
+              <span class="fw-bold fs-5">3000 Ft</span>
+            </div>
+            <button class="btn btn-dark ticket-btn add-to-cart" data-ticket="Elővételes – Időkorlátos">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. jegy -->
+      <div class="col-md-6">
+        <div class="card ticket-card">
+          <img src="img/polevayacard.jpg" class="ticket-img h-50" />
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div>
+              <h5 class="fw-bold">Normál Elővételes Jegy – <span style="color: purple;">El Paso</span> -Időkorlát nélkül <span style="color: red;">|12/19|</span>
+              </h5>
+              <p class="text-muted small">A belépő 22:00-4:00-ig jogosít belépésre</p>
+              <span class="fw-bold fs-5">3500 Ft</span>
+            </div>
+            <button class="btn btn-dark ticket-btn add-to-cart" data-ticket="Normál Elővételes">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card ticket-card">
+          <img src="img/xmascard.jpg" class="ticket-img h-50" />
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div>
+              <h5 class="fw-bold">Elővételes Jegy – <span style="color: rgb(255, 196, 0);">XMASS</span> - Időkorlátos <span style="color: red;">|12/25|</span></h5>
+              <p class="text-muted small">A belépő éjfélig jogosít belépésre</p>
+              <span class="fw-bold fs-5">3000 Ft</span>
+            </div>
+            <button class="btn btn-dark ticket-btn add-to-cart" data-ticket="Elővételes – Időkorlátos">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. jegy -->
+      <div class="col-md-6">
+        <div class="card ticket-card">
+          <img src="img/xmascard.jpg" class="ticket-img h-50" />
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div>
+              <h5 class="fw-bold">Normál Elővételes Jegy – <span style="color:  rgb(255, 196, 0);">XMASS</span> -Időkorlát nélkül <span style="color: red;">|12/25|</span>
+              </h5>
+              <p class="text-muted small">A belépő 22:00-4:00-ig jogosít belépésre</p>
+              <span class="fw-bold fs-5">3500 Ft</span>
+            </div>
+            <button class="btn btn-dark ticket-btn add-to-cart" data-ticket="Normál Elővételes">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card ticket-card">
+          <img src="img/szilvesztercard.jpg" class="ticket-img h-50" />
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div>
+              <h5 class="fw-bold">Elővételes Jegy – <span style="color: purple;">Szilveszter</span> -Időkorlátos <span style="color: red;">|12/31|</span></h5>
+              <p class="text-muted small">A belépő éjfélig jogosít belépésre</p>
+              <span class="fw-bold fs-5">3000 Ft</span>
+            </div>
+            <button class="btn btn-dark ticket-btn add-to-cart" data-ticket="Elővételes – Időkorlátos">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. jegy -->
+      <div class="col-md-6">
+        <div class="card ticket-card">
+          <img src="img/szilvesztercard.jpg" class="ticket-img h-50" />
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div>
+              <h5 class="fw-bold">Normál Elővételes Jegy – Időkorlát nélkül <span style="color: red;">|12/31|</span>
+              </h5>
+              <p class="text-muted small">A belépő 22:00-4:00-ig jogosít belépésre</p>
+              <span class="fw-bold fs-5">3500 Ft</span>
+            </div>
+            <button class="btn btn-dark ticket-btn add-to-cart" data-ticket="Normál Elővételes">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card ticket-card">
+          <img src="img/szilvesztercard.jpg" class="ticket-img h-50" />
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div>
+              <h5 class="fw-bold">Elővételes Jegy – Időkorlátos <span style="color: red;">|26/01/01|</span></h5>
+              <p class="text-muted small">A belépő éjfélig jogosít belépésre</p>
+              <span class="fw-bold fs-5">3000 Ft</span>
+            </div>
+            <button class="btn btn-dark ticket-btn add-to-cart" data-ticket="Elővételes – Időkorlátos">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. jegy -->
+      <div class="col-md-6">
+        <div class="card ticket-card">
+          <img src="img/szilvesztercard.jpg" class="ticket-img h-50" />
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div>
+              <h5 class="fw-bold">Normál Elővételes Jegy – Időkorlát nélkül <span style="color: red;">|26/01/01|</span>
+              </h5>
+              <p class="text-muted small">A belépő 06:00-11:00-ig jogosít belépésre</p>
+              <span class="fw-bold fs-5">3500 Ft</span>
+            </div>
+            <button class="btn btn-dark ticket-btn add-to-cart" data-ticket="Normál Elővételes">+</button>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-<footer>
   <script>
-    includeHtml("footer");
+    document.querySelectorAll('.add-to-cart').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const ticket = btn.getAttribute('data-ticket');
+        alert(`A(z) "${ticket}" jegy sikeresen a kosárba került!`);
+      });
+    });
   </script>
-</footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+  <footer>
+    <script>
+      includeHtml("footer");
+    </script>
+  </footer>
 </body>
 
 </html>

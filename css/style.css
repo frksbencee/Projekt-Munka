@@ -26,11 +26,13 @@ nav {
     text-decoration: none;
     padding: 8px 12px;
     border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
 }
 
 .nav-link:hover {
     background-color: #e2e6ea;
-    
    border-bottom: 2px solid black;
   }
 
@@ -41,6 +43,7 @@ nav {
 
 .svg{
     width: 5%;
+    margin-top: 5px;
 }
 h1{
   text-align: center;
@@ -289,4 +292,44 @@ background-image: url(../img/vzscard.jpg);
   background-position: center;
   position: relative;
   background-repeat: no-repeat;
+}
+.jegyvasarlas{
+  margin-top: 50px;
+}
+.ticket-card {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: 0.3s ease;
+    }
+
+    .ticket-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    }
+
+    .ticket-img {
+      height: 130px;
+      width: 100%;
+      background-size: cover;
+      position: relative;
+      background-position: center;
+      object-fit: cover;
+      background-repeat: no-repeat;
+    }
+
+    .ticket-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    /* Mobil nézetben eltűnik az SVG (hamburger menü mellett) */
+@media (max-width: 992px) {
+  .navbar .svg {
+    display: none;
+  }
 }
