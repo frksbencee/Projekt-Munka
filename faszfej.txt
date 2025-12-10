@@ -1,0 +1,34 @@
+function createSnow() {
+  const snow = document.getElementById("snow");
+
+  for (let i = 0; i < 80; i++) {
+    const snowflake = document.createElement("div");
+    snowflake.classList.add("snowflake");
+
+    // Csillag emoji
+    snowflake.textContent = "★";
+
+    const size = Math.random() * 20 + 10; // nagyobb csillagméret
+    snowflake.style.fontSize = `${size}px`;
+    snowflake.style.position = "absolute";
+    snowflake.style.color = "yellow";     // csillag színe
+    snowflake.style.left = Math.random() * 100 + "vw";
+    snowflake.style.top = Math.random() * -50 + "px";
+    snowflake.style.opacity = Math.random();
+    snowflake.style.animation = `fall ${2 + Math.random() * 4}s linear infinite`;
+
+    snow.appendChild(snowflake);
+  }
+}
+
+createSnow();
+
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}

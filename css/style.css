@@ -875,7 +875,25 @@ background-image: url(../img/vzscard.jpg);
   }
 }
 
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+#snow {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
+    z-index: 1; 
+    pointer-events: none;
+}
 
-
-
-
+.snowflake {
+    position: absolute;
+    color: yellow;
+}
