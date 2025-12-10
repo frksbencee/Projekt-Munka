@@ -5,7 +5,7 @@
 1.	Csapattagok: Farkas Bence, Ádók Patrik
 ## Webportál Neve és Brand
 1.	Név: "Sing Sing Music Hall"
-1.	Logó: Tervezetek egy egyszerű, de figyelemfelkeltő logót, amely lényegében a bulizóhely neve.
+1.	Logó: AI-al terveztünk egy figyelemfelkeltő logót, amely lényegében a bulizóhely neve.
 ## Webportál Szerkezete
 1.	Főoldal: Bevezetés az egészséges életmódba, rövid bemutatkozás.
 1.	Szolgáltatások: Részletes leírás a bulizóhelyen lévő szolgáltatásokról, lehetőségekről.
