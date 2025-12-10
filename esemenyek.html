@@ -47,45 +47,13 @@
   </header>
 
   <script src="js/app.js"></script>
-
-  <title>Események - Sing Sing Music Hall</title>
-
-  </head>
-
-  <body>
-
-    <header>
-      <script>
-        includeHtml("header");
-      </script>
-    </header>
   <script src="js/confetti.js"></script>
   <script>
-    includeHtml("header");
+      includeHtml("header");
   </script>
 
-    <div class="py-5 esemenyhatter">
+  <div class="py-5 esemenyhatter">
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"></script>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
-
-      <h1 class="text-center mb-4" style="color:#ffd700; font-weight: bold;">🎉 ESEMÉNYEK – DECEMBER 🎉</h1>
-
-      <!-- VISSZASZÁMLÁLÓ -->
-      <div id="countdownBox" class="countdown-box">
-        Visszaszámláló a következő buliig: <span id="countdown"></span>
-      </div>
-      <div class="container">
-        <div class="row g-4 ">
-
-          <!-- ESEMÉNY 1 -->
-          <div class="col-md-6 col-lg-6">
-            <div class="event-card mamacita">
-              <div class="event-date text-center">2025. 12. 05. – 22:00</div>
-              <h2 class="event-title">Mamacita XXL</h2>
-              <p class="fellepok"><strong>Fellépők:</strong> Nikita, VZS, Lmen Prala, Black Cell</p>
-            </div>
     <h1 class="text-center mb-4" style="color:#ffd700; font-weight: bold;">🎉 ESEMÉNYEK – DECEMBER 🎉</h1>
 
     <div id="countdownBox" class="countdown-box">
@@ -101,55 +69,8 @@
             <h2 class="event-title">Mamacita XXL</h2>
             <p class="fellepok"><strong>Fellépők:</strong> Nikita, VZS, Lmen Prala, Black Cell</p>
           </div>
-
-          <!-- ESEMÉNY 2 -->
-          <div class="col-md-6 col-lg-6 ">
-            <div class="event-card elpaso">
-              <div class="event-date text-center">2025. 12. 19. – 22:00</div>
-              <h2 class="event-title">El Paso</h2>
-              <p class="fellepok"><strong>Fellépők:</strong> Polevaya, Purebeat, Chriss Jay, Butchers</p>
-            </div>
-          </div>
-
-          <!-- ESEMÉNY 3 -->
-          <div class="col-md-6 col-lg-6">
-            <div class="event-card xmas">
-              <div class="event-date text-center">2025. 12. 25. – 22:00</div>
-              <h2 class="event-title">Coronita XMAS</h2>
-              <p class="fellepok"><strong>Fellépők:</strong> Andrewboy, Goldsound, Manic N, Steve Judge</p>
-            </div>
-          </div>
-
-          <!-- ESEMÉNY 4 -->
-          <div class="col-md-6 col-lg-6">
-            <div class="event-card szilveszter">
-              <div class="event-date text-center">2025. 12. 31. – 22:00</div>
-              <h2 class="event-title">Sing Sing Szilveszter</h2>
-              <p class="fellepok"><strong>Fellépők:</strong> Lennard, Molnár Bé, Cooky, Gabriel B, Sterbinszky</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6 offset-3">
-            <div class="event-card szilveszter  ">
-              <div class="event-date text-center">2026. 01. 01. 6:00 – 12:00</div>
-              <h2 class="event-title">Sing Sing Szilveszter After</h2>
-              <p class="fellepok"><strong>Fellépők:</strong>CHRSTPHR, Andrewboy, Daniel Weirdo, R92, Gabriel Dancer</p>
-            </div>
-          </div>
-
         </div>
 
-
-      </div>
-      <div class="d-flex justify-content-center align-items-center jegyvasarlas">
-        <a class="fancy" href="jegyarak.html">
-          <span class="top-key"></span>
-          <span class="text">Jegy vásárlás</span>
-          <span class="bottom-key-1"></span>
-          <span class="bottom-key-2"></span>
-        </a>
-      </div>
-    </div>
         <div class="col-md-6 col-lg-6 ">
           <div class="event-card elpaso">
             <div class="event-date text-center">2025. 12. 19. – 22:00</div>
@@ -196,65 +117,12 @@
   </div>
   
 
-
-
-    <footer>
-      <script>
-        includeHtml("footer");
-      </script>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- VISSZASZÁMLÁLÓ JAVASCRIPT -->
+  <footer>
     <script>
-      const events = [
-        { date: "2025-12-05T22:00:00" },
-        { date: "2025-12-19T22:00:00" },
-        { date: "2025-12-25T22:00:00" },
-        { date: "2025-12-31T22:00:00" },
-        { date: "2026-01-01T6:00:00" }
-      ];
-
-      function getNextEvent() {
-        const now = new Date().getTime();
-        for (let e of events) {
-          const eventDate = new Date(e.date).getTime();
-          if (eventDate > now) return eventDate;
-        }
-        return null; // ha nincs több esemény
-      }
-
-      const nextEvent = getNextEvent();
-
-      function updateCountdown() {
-        if (!nextEvent) {
-          document.getElementById("countdown").innerHTML = "Nincs több idei esemény 🎉";
-          return;
-        }
-
-        const now = new Date().getTime();
-        const distance = nextEvent - now;
-
-        if (distance <= 0) {
-          document.getElementById("countdown").innerHTML = "A következő buli elkezdődött! 🔥";
-          return;
-        }
-
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        document.getElementById("countdown").innerHTML =
-          `${days} nap ${hours} óra ${minutes} perc ${seconds} mp`;
-      }
-
-      setInterval(updateCountdown, 1000);
-      updateCountdown();
+      includeHtml("footer");
     </script>
+  </footer>
 
-  </body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     if (typeof createSnow === 'function') {
