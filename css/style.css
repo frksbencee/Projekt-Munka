@@ -57,6 +57,13 @@ h2{
   font-optical-sizing: auto;  
   font-style: normal;
 }
+h3{
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;  
+  font-style: normal;
+  font-size: 35px;
+}
 
 
 /* Jegy vásárlás kódja */ 
@@ -354,7 +361,6 @@ background-image: url(../img/vzscard.jpg);
   background: transparent;
 }
 
-
 .banda1{
   width: 75%;
   margin: auto;
@@ -367,8 +373,6 @@ background-image: url(../img/vzscard.jpg);
 
 /* Képek középre igazítása a galériában */
 
-
-/* Képek középre igazítása csak a 2 oszlopos képekre (ne érintse a videós oszlopokat) */
 .row.g-4 > .col-6 {
   display: flex;
   justify-content: center;
@@ -390,36 +394,7 @@ background-image: url(../img/vzscard.jpg);
 .galeriahatter{
   background-color: grey;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* kapcsolat */
 .new_home_web .text-blk.subHeading {
   text-align: center;
   color: #939393;
@@ -872,6 +847,53 @@ background-image: url(../img/vzscard.jpg);
     margin: 0 0 10px 0;
   }
 }
+
+    .drink-card {
+      height: 100%;
+      transition: all 0.3s ease;
+      border: none;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: white;
+    }
+
+    .drink-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(255, 215, 0, 0.3);
+      border-top: 3px solid #ffd700;
+    }
+
+    .drink-category {
+      background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+      color: #1a1a2e;
+      padding: 20px;
+      border-radius: 15px;
+      margin: 30px 0 20px 0;
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+    }
+
+    .drink-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+
+    .drink-price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #ffd700;
+      margin-top: 15px;
+    }
+.itallaphatter{
+  background-color: darkslategrey;
+}
+.jegyarakhatter{
+  background: linear-gradient(135deg, #1a1a1a, #3a3a3a);
+}
+
 
 @keyframes fall {
   0% {
