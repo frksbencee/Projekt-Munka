@@ -19,6 +19,12 @@
 <header>
   <script>
     includeHtml("header");
+    document.querySelectorAll('.add-to-cart').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const ticket = btn.getAttribute('data-ticket');
+        alert(`A(z) "${ticket}" jegy sikeresen a kosárba került!`);
+      });
+    });
   </script>
 </header>
 
@@ -79,6 +85,10 @@
   <footer>
     <script>
       includeHtml("footer");
+      document.getElementById("w-c-s-bgc_p-1-dm-id").addEventListener("click", function (e) {
+        e.preventDefault();
+        alert("Email sikeresen elküldve!");
+      });
     </script>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"></script>

@@ -435,8 +435,6 @@ background-image: url(../img/vzscard.jpg);
   background-position-x: initial;
   background-position-y: initial;
   background-size: initial;
-  background-repeat-x: initial;
-  background-repeat-y: initial;
   background-attachment: initial;
   background-origin: initial;
   background-clip: initial;
@@ -850,6 +848,7 @@ background-image: url(../img/vzscard.jpg);
   }
 }
 
+<<<<<<< HEAD
     .drink-card {
       height: 100%;
       transition: all 0.3s ease;
@@ -896,3 +895,27 @@ background-image: url(../img/vzscard.jpg);
   background: linear-gradient(135deg, #1a1a1a, #3a3a3a);
 }
 
+=======
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+#snow {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
+    z-index: 1; 
+    pointer-events: none;
+}
+
+.snowflake {
+    position: absolute;
+    color: yellow;
+}
+>>>>>>> cfec4b22c08d8d1c93e94cdd8ffb455a86e19422
