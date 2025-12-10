@@ -335,29 +335,61 @@ background-image: url(../img/vzscard.jpg);
 }
 
 /* video */
-.video-card {
-  border: 0;
-  border-radius: 0.75rem;
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  background: #fff;
-}
-.video-card .card-body {
-  padding: 0.75rem 1rem;
-  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(250,250,250,0.9));
-  font-family: 'Rubik', sans-serif;
-  font-size: 0.95rem;
-}
-@media (max-width: 575.98px) {
-  .video-card .card-body {
-    font-size: 0.9rem;
-  }
-}
-.kep{
-  width: 50%;
-  height: 50%;
+
+
+.card.video-card {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
+/* biztosítja, hogy a videó maga se legyen fehér háttérrel */
+.card.video-card .ratio,
+.card.video-card video {
+  background: transparent !important;
+}
+
+/* ha a .kep vagy más elemeknek is fehér a háttere */
+.kep, .img-fluid {
+  background: transparent;
+}
+
+
+.banda1{
+  width: 75%;
+  margin: auto;
+}
+.banda2{
+  width: 75%;
+    margin: auto;
+}
+
+
+/* Képek középre igazítása a galériában */
+
+
+/* Képek középre igazítása csak a 2 oszlopos képekre (ne érintse a videós oszlopokat) */
+.row.g-4 > .col-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row.g-4 > .col-6 .kep {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row.g-4 .kep img {
+  max-width: 75%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+.galeriahatter{
+  background-color: grey;
+}
 
 
 
