@@ -46,7 +46,7 @@ app.get("/api/messages", (req,res) => {
     FROM messages
     `;
 
-    db.query(sql, (err,resualt) => {
+    db.query(sql, (err,result) => {
         if (err) {
             console.error(err);
             return res.status(500).json({error: "Database error"});
@@ -58,3 +58,4 @@ app.get("/api/messages", (req,res) => {
 let PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));
 
+// MEGKELL CSINÁLNI MÉG ---> VALAMI FURA PORT ERROR KÓDOT ÍR KI
