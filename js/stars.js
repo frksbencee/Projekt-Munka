@@ -31,3 +31,4 @@
         snow.appendChild(snowflake);
     }
 }
+

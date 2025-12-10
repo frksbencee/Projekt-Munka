@@ -29,3 +29,4 @@ function createSnow() {
         snow.appendChild(snowflake);
     }
 }
+
