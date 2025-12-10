@@ -17,6 +17,7 @@
 1.	Bootstrap: Reszponzív design megvalósítására.
 1.	Git: Verziókezeléshez.
 1.	Képkezelés: Jogtiszta képek használata, optimalizálás.
+1.  Discord: Otthoni beszélgetést, munka megbeszélést segítette elő.
 ## Weboldal Funkcionalitás
 1.	Űrlap: Online kapcsolatbalépési lehetőség
 1.	Reszponzív dizájn: Mobilbarát megjelenés.
