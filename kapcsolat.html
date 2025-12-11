@@ -60,7 +60,7 @@
                     <input class="input" id="indfi-2" name="Vezeteknev" placeholder="Vezetéknév">
                   </div>
                   <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                    <input class="input" id="ipmgh-2" name="Email" placeholder="Email Cím">
+                    <input type="email" class="input" id="ipmgh-2" name="Email" placeholder="Email Cím">
                   </div>
                   <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 lastPhone">
                     <input class="input" id="imgis-2" name="Telefonszam" placeholder="Telefonszám">
@@ -85,10 +85,56 @@
   <footer>
     <script>
       includeHtml("footer");
-      document.getElementById("w-c-s-bgc_p-1-dm-id").addEventListener("click", function (e) {
-        e.preventDefault();
-        alert("Email sikeresen elküldve!");
-      });
+      (function () {
+        const sendBtn = document.getElementById("w-c-s-bgc_p-1-dm-id");
+        const emailInput = document.getElementById("ipmgh-2");
+        const firstNameInput = document.getElementById("ijowk-2");
+        const lastNameInput = document.getElementById("indfi-2");
+        const phoneInput = document.getElementById("imgis-2");
+        const messageInput = document.getElementById("i5vyy-2");
+        if (!sendBtn) return;
+        function validateEmail(email) {
+          const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          return re.test(email);
+        }
+        function showError(el, msg) {
+          if (!el) return;
+          el.classList.add("is-invalid");
+          let feedback = el.parentNode.querySelector('.invalid-feedback');
+          if (!feedback) {
+            feedback = document.createElement('div');
+            feedback.className = 'invalid-feedback';
+            el.parentNode.appendChild(feedback);
+          }
+          feedback.textContent = msg;
+          feedback.style.display = 'block';
+        }
+        function clearError(el) {
+          if (!el) return;
+          el.classList.remove('is-invalid');
+          const feedback = el.parentNode.querySelector('.invalid-feedback');
+          if (feedback) feedback.style.display = 'none';
+        }
+        [emailInput, firstNameInput, lastNameInput, phoneInput, messageInput].forEach(el => {
+          if (!el) return;
+          el.addEventListener('input', function () { clearError(el); });
+        });
+        sendBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          [emailInput, firstNameInput, lastNameInput, phoneInput, messageInput].forEach(clearError);
+          const emailValue = (emailInput && emailInput.value || '').trim();
+          if (!validateEmail(emailValue)) {
+            showError(emailInput, 'Kérjük, adj meg egy érvényes e-mail címet!');
+            emailInput.focus();
+            return;
+          }
+          alert('Email sikeresen elküldve!');
+          [emailInput, firstNameInput, lastNameInput, phoneInput, messageInput].forEach(function (el) {
+            if (el) el.value = '';
+          });
+          if (firstNameInput) firstNameInput.focus();
+        });
+      })();
     </script>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"></script>
