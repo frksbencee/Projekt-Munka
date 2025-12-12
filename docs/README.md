@@ -12,12 +12,12 @@
 1.	Online kontakt: Egy űrlap egy direct kontakt elérhetőséghez.
 1.	Kapcsolat: Elérhetőségek, térkép, közösségi média linkek.
 ## Használt Eszközök
+1.  Discord: Otthoni beszélgetést, munka megbeszélést segítette elő.
 1.	Trello: Feladatok nyomon követésére.
 1.	Figma: Wireframe és design tervek készítésére.
 1.	Bootstrap: Reszponzív design megvalósítására.
 1.	Git: Verziókezeléshez.
 1.	Képkezelés: Jogtiszta képek használata, optimalizálás.
-1.  Discord: Otthoni beszélgetést, munka megbeszélést segítette elő.
 ## Weboldal Funkcionalitás
 1.	Űrlap: Online kapcsolatbalépési lehetőség
 1.	Reszponzív dizájn: Mobilbarát megjelenés.
