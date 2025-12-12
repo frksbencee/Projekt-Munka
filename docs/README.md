@@ -22,10 +22,6 @@
 1.	Űrlap: Online kapcsolatbalépési lehetőség
 1.	Reszponzív dizájn: Mobilbarát megjelenés.
 1.	Akadálymentesítés: A weboldal legyen használható mindenki számára.
-## Megjelenés és Design
-1.	Színek: Bézs, zöld, fehér, narancs,  színek az egészséges életmód hangsúlyozására.
-1.	Betűtípusok: Különböző, de jól olvasható betűtípusok.
-1.	Dinamikus elemek: Carousel a receptek bemutatására, accordion a szolgáltatások részletezésére, modal ablakok a blogcikkekhez.
 ## Dokumentálás
 1.	Trello: Feladatok és határidők nyomon követése.
 1.	Figma: Wireframe és design tervek.
@@ -37,3 +33,4 @@
 ## Kódolás
 1.	HTML: Legalább 6 HTML oldal létrehozása.
 1.	CSS: Külső CSS fájl használata, Bootstrap integrálása.
+1.  JS: Animációk, különböző olyan kódokra, ami feldobja az oldalt.
